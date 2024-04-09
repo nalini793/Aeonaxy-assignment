@@ -1,0 +1,90 @@
+.container {
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+  gap: 4rem;
+}
+.container h2{
+  padding: 0 1rem;
+  font-size: 3rem;
+}
+.container form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+}
+.formRow{
+  display: flex;
+  flex-direction: row;
+}
+.formGroup {
+  font-size: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.formGroup label{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.formGroup input{
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background-color: rgb(221, 239, 239);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.formGroup input[type=checkbox]:checked{
+  accent-color: rgb(221, 85, 130);
+}
+
+.error {
+  color: red;
+}
+.terms{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.terms label{
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-top: 10px;
+  
+}
+
+.terms a, .captcha a {
+  text-decoration: none;
+  color: rgb(95, 95, 229);
+}
+
+.createAccount {
+  background-color: pink;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.captcha {
+  font-size: 1rem;
+  color: gray;
+  margin-top: -20px;
+  width: 70%;
+}
+
+@media (max-width: 480px) {
+.captcha {
+  font-size: 1.35rem;
+}
+.formRow {
+  flex-direction: column;
+}
+.container {
+  width: 80%;
+}
+}

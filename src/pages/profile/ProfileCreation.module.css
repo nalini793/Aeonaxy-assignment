@@ -1,0 +1,187 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.smallLogo {
+  position: absolute;
+  top: 3rem;
+  left: 4rem;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: max-content;
+  padding: 2rem;
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+
+}
+
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.avatarSection {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 2rem;
+}
+
+.sectionHeading {
+  font-size: 1.5rem;
+  font-weight: semibold;
+  margin-bottom: 1.5rem;
+
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.avatar {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.selectAvatar{
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.selectAvatar input{
+  visibility:hidden;
+}
+.selectAvatar label{
+  cursor: pointer;
+  font-size: 1.4rem;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+
+.avatarText {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+  
+}
+
+.locationSection {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.locationInput {
+  border: 0;
+  width: 100%;
+  outline: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  font-weight: semibold;
+  
+}
+.locationInput::placeholder{
+  font-size: 1.2rem;
+}
+
+.btnwrap{
+  text-align: center;
+}
+.btnwrap button {
+  display: inline-block;
+  background-color: rgb(221, 85, 130);
+  color: #fefefe;
+  width: 20rem;
+  padding: 1rem 3rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-align: center;
+  outline: 0;
+  border: none;
+
+}
+
+.btnwrap button:hover,
+.btnwrap button:active {
+  background-color: rgb(240, 61, 121);
+  cursor: pointer;
+}
+
+.btnwrap button:active {
+  transform: scale(1.15);
+  transition: .5s ease-in-out;
+}
+
+.btnwrap button:disabled {
+  background-color: rgba(240, 61, 121, 0.482);
+  ;
+}
+.return{
+  display: block;
+  font-size: 1rem;
+  color: #333;
+  letter-spacing: 0.5px;
+  padding: 1.5rem;
+}
+.hideReturn{
+  display: none;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .smallLogo{
+    left: 3rem;
+  }
+  .innerContainer{
+    padding: 3rem;
+  }
+
+}
+@media (max-width: 480px) {
+
+.avatarContainer {
+  flex-direction: column;
+}
+
+.selectAvatar {
+  margin: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+}
+

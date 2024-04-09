@@ -1,0 +1,172 @@
+/* Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+
+}
+
+.navList li {
+  margin-left: 2rem;
+}
+
+.navList li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+}
+
+
+.searchInput {
+  padding: 0.5rem;
+  width: 15rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  color: #777;
+  background-color: #f3f3f3;
+
+}
+
+.searchInput input {
+  outline: 0;
+  border: 0;
+  padding-left: 0.5rem;
+  background: transparent;
+  color: #333;
+  width: 80%;
+}
+
+.uploadButton{
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  width: auto;
+}
+.profileButton{
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.hamShow{
+  display: none;
+}
+
+@media screen and (max-width: 1280px){
+  .navList {
+      
+      font-size: 1.3rem;
+  
+    }
+  
+    .navList li {
+      margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+
+  .bar {
+    background-color: #120f0b;
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* adding active class to the bars  */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+
+
+  /* navMenu */
+
+  .nav{
+    flex-direction: row-reverse;
+    justify-content: end;
+  }
+
+  .navList {
+    position: absolute;
+    flex-direction: column;
+    gap: 0;
+    top: 70px;
+    left: -100%;
+    text-align: start;
+    width: 100%;
+    transition: 0.7s ease-in-out;
+    background-color: aliceblue;
+    padding: 10px;
+  }
+
+  .navList.active {
+    left: 0;
+  }
+
+  .navList li {
+    margin: 1.6rem 0;
+    font-size: 16px;
+  }
+
+  /* nav actions shifting to navbar */
+
+  .hamHide{
+    display: none;
+  }
+  .hamShow{
+    display: block;
+  }
+}

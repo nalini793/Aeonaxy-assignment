@@ -1,0 +1,25 @@
+button{
+  display: inline-block;
+  background-color: rgb(221, 85, 130);
+  color: #fefefe;
+  width: 20rem;
+  padding: 1rem 3rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  text-align: center;
+  outline: 0;
+  border: none;
+
+}
+
+button:hover, button:active{
+  background-color: rgb(240, 61, 121);
+  cursor: pointer;
+}
+button:active{
+  transform: scale(1.15);
+  transition: .5s ease-in-out;
+}
+button:disabled{
+  background-color: rgba(240, 61, 121, 0.482);;
+}
