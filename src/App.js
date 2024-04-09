@@ -1,7 +1,6 @@
 import "./App.css";
-import { useState, createContext } from "react";
-import ReactDOM from "react-dom/client";
-import { Route, NavLink, Routes, BrowserRouter } from "react-router-dom";
+
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Signup from "./pages/signup/Signup";
 
 import ProfileCreation from "./pages/profile/ProfileCreation";

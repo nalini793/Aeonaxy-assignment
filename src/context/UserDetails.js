@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext } from "react";
 
 // Creating the context object and passing the default values.
 
