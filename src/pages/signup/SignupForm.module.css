@@ -2,9 +2,10 @@
   width: min-content;
   display: flex;
   flex-direction: column;
-  
   justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  gap: 3rem;
+
 }
 .container h2{
   padding: 0 1rem;
@@ -71,13 +72,14 @@
 }
 
 .captcha {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: gray;
   margin-top: -20px;
-  width: 70%;
+  width: 100%;
+  padding-left: 2rem;
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 .captcha {
   font-size: 1.35rem;
 }

@@ -13,6 +13,9 @@ const Signup = () => {
         </p>
       </div>
       <div className={styles.rightSection}>
+        <div className={styles.smallLogo}>
+          <Logo></Logo>
+        </div>
         <div className={styles.signin_option}>
           <h3>
             Already a member? <a href="#">Sign In</a>
