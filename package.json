@@ -1,7 +1,7 @@
 {
   "name": "dribbleclone",
   "version": "0.1.0",
-  "homepage": "https://github.com/nalini793/Aeonaxy-assignment",
+  "homepage": "https://nalini793.github.io/Aeonaxy-assignment",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
